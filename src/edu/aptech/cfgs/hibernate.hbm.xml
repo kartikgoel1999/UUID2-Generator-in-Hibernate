@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="edu.aptech.domain.Student" table="Student">
+    		<id name="id">
+    		<generator class="uuid2">
+    			<param name="uuid_gen_strategy_class">StandardRandomStrategy</param>
+    		</generator></id>
+    		<property name="f_name"></property>
+    		<property name="l_name"></property>
+    		<property name="email"></property>
+    	</class>   
+    </hibernate-mapping>>
